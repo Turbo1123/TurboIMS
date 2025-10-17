@@ -8,6 +8,8 @@
   [![Android](https://img.shields.io/badge/Android-14%2B-green.svg)](https://www.android.com/)
   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
   [![Version](https://img.shields.io/badge/Version-3.0-brightgreen.svg)](https://github.com/Turbo1123/TurboIMS/releases)
+
+  English | [简体中文](README_CN.md)
 </div>
 
 ---
@@ -216,21 +218,6 @@ Contributions are welcome! Please feel free to submit pull requests or open issu
 - UI improvements
 - Translations
 - Documentation
-
-## 📱 Screenshots
-
-<details>
-<summary>Click to view screenshots</summary>
-
-_(Add screenshots here after deploying to GitHub)_
-
-- Splash Screen
-- Main Interface
-- SIM Selection
-- Configuration Success Dialog
-- Network Settings
-
-</details>
 
 ---
 
