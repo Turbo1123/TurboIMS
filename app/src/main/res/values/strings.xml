@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Turbo IMS</string>
+    <string name="for_pixel">for Pixel</string>
+
+    <!-- Main Screen -->
+    <string name="title">Turbo IMS Configuration</string>
+    <string name="system_info">System Information</string>
+    <string name="android_version">Android Version: %s</string>
+    <string name="shizuku_status">Shizuku Status: %s</string>
+    <string name="shizuku_ready">✅ Ready</string>
+    <string name="shizuku_not_running">❌ Not Running</string>
+    <string name="shizuku_no_permission">⚠️ No Permission</string>
+
+    <!-- Warning -->
+    <string name="qpr2_beta3_warning">⚠️ WARNING: Android 16 QPR2 Beta 3+ restricts persistent configuration. Settings will reset after reboot and need to be reapplied.</string>
+
+    <!-- Features -->
+    <string name="features_config">Features Configuration</string>
+    <string name="volte">VoLTE (4G Voice)</string>
+    <string name="volte_desc">Enable 4G HD voice calling</string>
+    <string name="vowifi">VoWiFi (WiFi Calling)</string>
+    <string name="vowifi_desc">Enable WiFi network calling</string>
+    <string name="vt">VT (Video Calling)</string>
+    <string name="vt_desc">Enable video calling feature</string>
+    <string name="vonr">VoNR (5G Voice)</string>
+    <string name="vonr_desc">Enable 5G HD voice calling</string>
+    <string name="cross_sim">Cross-SIM Calling</string>
+    <string name="cross_sim_desc">Dual-SIM interconnection</string>
+    <string name="ut">UT Supplementary Services</string>
+    <string name="ut_desc">Call forwarding, call waiting, etc.</string>
+    <string name="_5g_nr">5G NR (NSA/SA)</string>
+    <string name="_5g_nr_desc">Enable 5G network (Non-standalone/Standalone)</string>
+
+    <!-- Button -->
+    <string name="apply_config">Apply Configuration</string>
+
+    <!-- Tips -->
+    <string name="tips">Tips:\n• Shizuku must be started and authorized first\n• Configuration applies to all active SIM cards\n• Android 16 QPR2 Beta 3+ requires reapplication after reboot</string>
+
+    <!-- Messages -->
+    <string name="shizuku_not_running_msg">Shizuku is not running. Please start Shizuku first.</string>
+    <string name="shizuku_no_permission_msg">Please grant Shizuku permission</string>
+    <string name="config_applied">Configuration applied successfully!</string>
+    <string name="config_failed">Configuration failed: %s</string>
+    <string name="update_shizuku">Please update Shizuku to the latest version</string>
+
+    <!-- Language -->
+    <string name="language">Language</string>
+    <string name="switch_language">中文</string>
+
+    <!-- SIM Card -->
+    <string name="select_sim">Select SIM Card</string>
+    <string name="sim_card">SIM Card</string>
+    <string name="no_sim_found">No active SIM card found</string>
+    <string name="sim_1">SIM 1</string>
+    <string name="sim_2">SIM 2</string>
+    <string name="apply_to_all_sims">Apply to All SIM Cards</string>
+    <string name="apply_to_sim_1">Apply to SIM 1</string>
+    <string name="apply_to_sim_2">Apply to SIM 2</string>
+    <string name="apply_to_all">Apply to All</string>
+    <string name="config_applied_to_all">Configuration applied to all SIM cards!</string>
+
+    <!-- Network Settings -->
+    <string name="go_to_network_settings">Go to Network Settings</string>
+    <string name="config_success_message">Configuration applied successfully! Would you like to go to network settings?</string>
+    <string name="later">Later</string>
+</resources>

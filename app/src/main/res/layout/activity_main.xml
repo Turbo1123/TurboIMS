@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <!-- Header -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1A73E8"
+            android:padding="24dp"
+            android:paddingTop="48dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="⚡ Turbo IMS"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/for_pixel"
+                    android:textSize="14sp"
+                    android:textColor="#E0E0E0"
+                    android:gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="monospace" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_switch_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/switch_language"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:background="@android:color/transparent"
+                android:minWidth="60dp"
+                android:minHeight="36dp"
+                android:paddingHorizontal="12dp" />
+        </RelativeLayout>
+
+        <!-- System Info Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_margin="16dp"
+            android:padding="20dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/system_info"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1A73E8"
+                android:paddingBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tv_android_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Version: Loading..."
+                android:textSize="14sp"
+                android:textColor="#424242"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_shizuku_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shizuku Status: Checking..."
+                android:textSize="14sp"
+                android:textColor="#424242"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_persistent_warning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/qpr2_beta3_warning"
+                android:textSize="13sp"
+                android:textColor="#F57C00"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:visibility="gone"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- SIM Card Selection -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="20dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sim_card"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1A73E8"
+                android:paddingBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tv_sim_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_sim_found"
+                android:textSize="14sp"
+                android:textColor="#757575"
+                android:paddingBottom="8dp" />
+
+            <Button
+                android:id="@+id/btn_select_sim"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/select_sim"
+                android:textSize="14sp"
+                android:textColor="#1A73E8"
+                android:background="@android:color/transparent"
+                android:gravity="start|center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp" />
+        </LinearLayout>
+
+        <!-- Features Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="20dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/features_config"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1A73E8"
+                android:paddingBottom="16dp" />
+
+            <!-- VoLTE -->
+            <include layout="@layout/feature_item"
+                android:id="@+id/item_volte" />
+
+            <View style="@style/Divider" />
+
+            <!-- VoWiFi -->
+            <include layout="@layout/feature_item"
+                android:id="@+id/item_vowifi" />
+
+            <View style="@style/Divider" />
+
+            <!-- VT -->
+            <include layout="@layout/feature_item"
+                android:id="@+id/item_vt" />
+
+            <View style="@style/Divider" />
+
+            <!-- VoNR -->
+            <include layout="@layout/feature_item"
+                android:id="@+id/item_vonr" />
+
+            <View style="@style/Divider" />
+
+            <!-- Cross SIM -->
+            <include layout="@layout/feature_item"
+                android:id="@+id/item_cross_sim" />
+
+            <View style="@style/Divider" />
+
+            <!-- UT -->
+            <include layout="@layout/feature_item"
+                android:id="@+id/item_ut" />
+
+            <View style="@style/Divider" />
+
+            <!-- 5G NR -->
+            <include layout="@layout/feature_item"
+                android:id="@+id/item_5g_nr" />
+        </LinearLayout>
+
+        <!-- Apply Button -->
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/apply_config"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#1A73E8"
+            android:enabled="false" />
+
+        <!-- Tips -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tips"
+            android:textSize="12sp"
+            android:textColor="#757575"
+            android:padding="16dp"
+            android:paddingBottom="32dp" />
+    </LinearLayout>
+</ScrollView>

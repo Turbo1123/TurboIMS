@@ -2,14 +2,25 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <instrumentation
-        android:name=".PrivilegedProcess"
-        android:targetPackage="${applicationId}" />
-
     <application
-        android:label="Ims"
-        android:theme="@android:style/Theme.DeviceDefault.DayNight"
-        tools:ignore="MissingApplicationIcon">
+        android:label="Turbo IMS"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@android:style/Theme.DeviceDefault.DayNight">
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="Turbo IMS" />
 
         <provider
             android:name=".ShizukuProvider"
@@ -18,5 +29,10 @@
             android:multiprocess="false"
             android:permission="android.permission.NETWORK_SETTINGS" />
     </application>
+
+    <instrumentation
+        android:name="io.github.vvb2060.ims.PrivilegedProcess"
+        android:targetPackage="${applicationId}"
+        android:label="IMS Configurator" />
 
 </manifest>

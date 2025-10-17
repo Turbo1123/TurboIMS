@@ -5,8 +5,9 @@ plugins {
 android {
     namespace = "io.github.vvb2060.ims"
     defaultConfig {
-        versionCode = 4
-        versionName = "2.2"
+        applicationId = "io.github.turboims.pixel"
+        versionCode = 5
+        versionName = "3.0"
     }
     buildTypes {
         release {
@@ -18,8 +19,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_21
-        targetCompatibility = JavaVersion.VERSION_21
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     buildFeatures {
         buildConfig = true
@@ -38,6 +39,7 @@ android {
 }
 
 dependencies {
+    compileOnly(project(":stub"))
     implementation(libs.shizuku.provider)
     implementation(libs.shizuku.api)
     implementation(libs.hiddenapibypass)
